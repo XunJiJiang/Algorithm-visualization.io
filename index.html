@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/electron-vite-B76OtuxL.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>算法可视化</title>
+    <script type="module" crossorigin src="/assets/main-Daz4QLl5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Cqu5VdtI.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="menu-container">
+        <h1><span>算法可视化</span></h1>
+        <p>提供响应式动画</p>
+        <nav id="root-menu-container">
+          <ul>
+            <li class="root-menu-container-li"><a class="btn btn-primary">开始</a></li>
+            <li class="root-menu-container-li">
+              <a
+                class="btn btn-info"
+                href="https://github.com/XunJiJiang/Algorithm-visualization/blob/main/README.md"
+                target="_blank"
+              >
+                指引
+              </a>
+            </li>
+            <li class="root-menu-container-li">
+              <a
+                class="btn btn-info"
+                id="openInGithub"
+                href="https://github.com/XunJiJiang/Algorithm-visualization"
+                target="_blank"
+              >
+                在GitHub上查看
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="code-menu-container">
+        <div class="drag-bar" id="code-menu-drag-bar"></div>
+        <nav id="code-menu">
+          <ul>
+            <li><a class="block code-menu-item disabled">汉诺塔问题</a></li>
+            <li><a class="block code-menu-item">最小生成树问题</a></li>
+            <li><a class="block code-menu-item">哈夫曼树构造问题</a></li>
+            <li><a class="block code-menu-item">旅行商(TSP)问题</a></li>
+            <li><a class="block code-menu-item disabled">图的m着色问题</a></li>
+            <li><a class="block code-menu-item">快速排序</a></li>
+            <li><a class="block code-menu-item">冒泡排序</a></li>
+            <li><a class="block code-menu-item">棋盘覆盖问题</a></li>
+          </ul>
+          <a class="block code-menu-back back" id="code-menu-back">返回</a>
+        </nav>
+      </div>
+      <div id="code-container">
+        <div class="drag-bar" id="code-drag-bar"></div>
+        <div id="pre-block"><pre id="code-block" class="atom-one-dark"></pre></div>
+        <div id="code-highlight-bar"></div>
+      </div>
+      <div id="canvas-container"></div>
+      <div id="controller">
+        <div id="controller-progress-bar"></div>
+        <div id="controller-prev" class="controller-btn">上一步</div>
+        <div id="controller-switch" class="controller-btn">播放</div>
+        <div id="controller-next" class="controller-btn">下一步</div>
+      </div>
+      <div id="dialog-container">
+        <div id="dialog">
+          <div id="dialog-title">算法参数</div>
+          <div id="dialog-content">
+            <form id="dialog-form"></form>
+          </div>
+          <div id="dialog-btn-container">
+            <a id="dialog-btn-cancel" class="dialog-btn btn btn-info">取消</a>
+            <a id="dialog-btn-cancel" class="dialog-btn btn btn-info">随机</a>
+            <a id="dialog-btn-confirm" class="dialog-btn btn btn-primary">确定</a>
+          </div>
+        </div>
+        <div id="dialog-bottom"></div>
+      </div>
+    </div>
+    <div id="loading-container">
+      <div id="loadingRound1">
+        <div id="loadingRound2">
+          <div id="loadingRound3"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
